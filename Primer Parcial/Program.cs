@@ -1,10 +1,12 @@
 ﻿// aquí comienza todo -Inserta musica epica!!!
 int factorial, num, nx3, numw1, nx5, numw2, secuencia;
-
+string name;
 try
 {
+    Console.WriteLine("Hola, bienvenid@ dime, ¿Cual es tu nombre?");
+    name = Console.ReadLine();
 //Inicia el código solicitando al usuario el numero que desea factorizar, el cual será impreso al final del programa.
-    Console.WriteLine("Hola, bienvenido, por favor inserte a continuación el numero que desea factorizar:");
+    Console.WriteLine($"Hola {name}, bienvenido, por favor inserte a continuación el numero que desea factorizar:");
     num = Convert.ToInt32(Console.ReadLine());
     factorial = 1;
 
