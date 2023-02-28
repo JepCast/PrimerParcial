@@ -6,16 +6,16 @@ string name;
 try
 {
     Console.WriteLine("Hola, bienvenid@ dime, ¿Cual es tu nombre?");
-    name = Console.ReadLine();
+        name = Console.ReadLine();
 //Inicia el código solicitando al usuario el numero que desea factorizar, el cual será impreso al final del programa.
     Console.WriteLine($"Hola {name}, bienvenid@, por favor inserte a continuación el numero que desea factorizar:");
-    num = Convert.ToInt32(Console.ReadLine());
-    factorial = 1;
+        num = Convert.ToInt32(Console.ReadLine());
+        factorial = 1;
  
 //2da parte del código donde realice la división entre 3, siendo los numeros enteros positivos menores o iguales que N.
     Console.WriteLine("\nAhora por favor inserta un numero entero positivo que desees dividir entre 3: ");
-    nx3 = Convert.ToInt32(Console.ReadLine());
-    numw1 = 1;
+        nx3 = Convert.ToInt32(Console.ReadLine());
+        numw1 = 1;
     Console.Write("Los numeros enteros positivos menores o iguales divisibles entre 3 son: ");
     while (numw1 <= nx3)
     {
@@ -30,8 +30,8 @@ try
 //3ra parte del código donde realice la división entre 5, siendo los numeros enteros positivos menores o iguales que N.
     Console.WriteLine();
     Console.WriteLine("\nAhora por favor inserta un numero entero positivo que desees dividir entre 5: ");
-    nx5 = Convert.ToInt32(Console.ReadLine());
-    numw2 = 1;
+        nx5 = Convert.ToInt32(Console.ReadLine());
+        numw2 = 1;
     Console.Write("Los numeros enteros positivos menores o iguales divisibles entre 5 son: ");
     while (numw2 <= nx5)
     {
