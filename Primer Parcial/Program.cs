@@ -3,10 +3,13 @@ int factorial, num, nx3, numw1, nx5, numw2, secuencia;
 
 try
 {
+//Inicia el código solicitando al usuario el numero que desea factorizar, el cual será impreso al final del programa.
     Console.WriteLine("Hola, bienvenido, por favor inserte a continuación el numero que desea factorizar:");
     num = Convert.ToInt32(Console.ReadLine());
     factorial = 1;
 
+    
+//2da parte del código donde realice la división entre 3, siendo los numeros enteros positivos menores o iguales que N.
     Console.WriteLine("\nAhora por favor inserta un numero entero positivo que desees dividir entre 3: ");
     nx3 = Convert.ToInt32(Console.ReadLine());
     numw1 = 1;
@@ -21,6 +24,7 @@ try
         numw1++;
     }
 
+//3ra parte del código donde realice la división entre 5, siendo los numeros enteros positivos menores o iguales que N.
     Console.WriteLine();
     Console.WriteLine("\nAhora por favor inserta un numero entero positivo que desees dividir entre 5: ");
     nx5 = Convert.ToInt32(Console.ReadLine());
@@ -36,6 +40,7 @@ try
         numw2++;
     }
 
+//Acá realizo la 4ta parte del código, realizando la secuencia de N numeros terminando en un valor mayor que N.
     Console.WriteLine();
     Console.WriteLine("\nAhora por favor inserta el numero que deseas para la secuencia de numeros: ");
     secuencia = Convert.ToInt32(Console.ReadLine());
@@ -57,6 +62,7 @@ try
             factorial *= i;
         }
 
+//Acá determino el factorial del numero.
     Console.Write("\nEl factorial de ");
     for (int i = 1; i <= num; i++)
     {
@@ -81,4 +87,7 @@ try
         Console.Write(" es = " + factorial);
     }
 } catch
-{ Console.WriteLine("Has insertado un dato no valido, por favor intentalo de nuevo!"); }
+{ Console.WriteLine("Has insertado un dato no valido, por favor intentalo de nuevo!"); 
+
+}
+Console.ReadKey();
